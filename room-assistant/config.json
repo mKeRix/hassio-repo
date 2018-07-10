@@ -33,12 +33,6 @@
       "onlyIBeacon": false,
       "majorMask": "0xFFFF",
       "minorMask": "0xFFFF"
-    },
-    "gpio": {
-      "ports": []
-    },
-    "shell": {
-      "commands": []
     }
   },
   "schema": {
