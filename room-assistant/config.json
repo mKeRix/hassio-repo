@@ -33,6 +33,27 @@
       "onlyIBeacon": false,
       "majorMask": "0xFFFF",
       "minorMask": "0xFFFF"
+    },
+    "gpio": {
+      "ports": [
+        {
+          "channel": "channel-to-post-in",
+          "pin": 4,
+          "retain": true
+        }
+      ]
+    },
+    "shell": {
+      "commands": [
+        {
+          "channel": "channel-to-post-in",
+          "command": "echo abc",
+          "cron": "0 * * * * *",
+          "regexp": "optional-regex-syntax",
+          "number": false,
+          "retain": false
+        }
+      ]
     }
   },
   "schema": {
