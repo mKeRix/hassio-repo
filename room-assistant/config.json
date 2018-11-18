@@ -1,6 +1,6 @@
 {
   "name": "room-assistant",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "slug": "room-assistant",
   "description": "room-assistant tracks presence and more on a room level",
   "url": "https://github.com/mKeRix/room-assistant",
@@ -16,7 +16,7 @@
   "host_network": true,
   "gpio": true,
   "ports": {
-    "3000/tcp": 3000
+    "3030/tcp": 3030
   },
   "options": {
     "services": [],
