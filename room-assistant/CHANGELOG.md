@@ -1,3 +1,7 @@
+# 1.1.1
+
+Made ble service compatible with Node 10. 
+
 # 1.1.0
 
 This release comes with a few added goodies that make room-assistant even more awesome! You do not need to change your configuration unless you were using the prometheus service before or you want to use the new features. More details can be found the [upgrade guide](https://github.com/mKeRix/room-assistant/wiki/Upgrade-Guide#10x-to-11x).
