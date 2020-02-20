@@ -1,0 +1,47 @@
+{
+  "name": "room-assistant (beta)",
+  "version": "2.0.0-beta.6",
+  "slug": "room_assistant_beta",
+  "description": "Current beta version of room-assistant",
+  "url": "https://www.room-assistant.io",
+  "startup": "application",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "i386"
+  ],
+  "image": "mkerix/room-assistant-beta-{arch}",
+  "boot": "auto",
+  "services": [
+    "mqtt:want"
+  ],
+  "apparmor": false,
+  "host_network": true,
+  "host_dbus": true,
+  "gpio": true,
+  "privileged": [
+    "SYS_RAWIO"
+  ],
+  "devices": [
+    "/dev/mem:/dev/mem:rwm",
+    "/dev/i2c-1:/dev/i2c-1:rwm"
+  ],
+  "ports": {
+    "6415/tcp": null,
+    "6425/udp": 6425
+  },
+  "ports_description": {
+    "6415/tcp": "HTTP API",
+    "6425/udp": "Internal communication between instances"
+  },
+  "options": {
+    "global": {
+      "instanceName": "changeme",
+      "integrations": [
+        "homeAssistant"
+      ]
+    }
+  },
+  "schema": false
+}
