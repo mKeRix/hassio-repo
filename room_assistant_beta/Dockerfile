@@ -1,6 +1,6 @@
 ARG BUILD_FROM
 
-FROM node:12-alpine as build
+FROM node:12.15.0-alpine as build
 ARG BUILD_VERSION=latest
 
 RUN apk add --no-cache python make g++ libusb-dev eudev-dev avahi-dev
@@ -11,7 +11,7 @@ FROM $BUILD_FROM
 WORKDIR /room-assistant
 ENV LANG C.UTF-8
 
-RUN apk add --no-cache nodejs npm bluez bluez-deprecated libusb avahi avahi-dev dmidecode \
+RUN apk add --no-cache nodejs=12.15.0-r1 npm bluez bluez-deprecated libusb avahi-dev bind-tools dmidecode \
     && setcap cap_net_raw+eip $(eval readlink -f `which node`) \
     && setcap cap_net_raw+eip $(eval readlink -f `which hcitool`) \
     && mkdir -p /room-assistant/config \

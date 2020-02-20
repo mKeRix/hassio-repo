@@ -6,4 +6,4 @@ if bashio::var.has_value "${MQTT_CONFIG}"; then
 fi
 
 bashio::log.info "Starting room-assistant"
-exec room-assistant
+exec room-assistant --digResolver
