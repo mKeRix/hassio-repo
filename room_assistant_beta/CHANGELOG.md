@@ -3,6 +3,7 @@
 ## 2.0.0-beta.8
 
 - Upgrades room-assistant to [2.0.0-beta.8](https://github.com/mKeRix/room-assistant/releases/tag/v2.0.0-beta.8)
+- Fixes issues with native dependencies on platforms other than amd64
 
 ## 2.0.0-beta.7
 
