@@ -1,0 +1,20 @@
+name: room-assistant
+
+on:
+  push:
+    paths:
+      - 'room_assistant/**'
+      - '.github/workflows/room-assistant.yml'
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to DockerHub Registry
+        run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+      - name: Build Hass.io images
+        run: docker run --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock -v ~/.docker:/root/.docker -v "$GITHUB_WORKSPACE/room_assistant":/data homeassistant/amd64-builder --all -t /data
