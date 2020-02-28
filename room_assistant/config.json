@@ -1,6 +1,6 @@
 {
   "name": "room-assistant",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "slug": "room_assistant",
   "description": "Presence tracking and more for automation on the room-level",
   "url": "https://www.room-assistant.io",
@@ -20,6 +20,9 @@
   "host_network": true,
   "host_dbus": true,
   "gpio": true,
+  "privileged": [
+    "NET_ADMIN"
+  ],
   "ports": {
     "6415/tcp": null,
     "6425/udp": 6425
