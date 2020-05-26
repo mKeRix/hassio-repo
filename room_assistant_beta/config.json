@@ -5,6 +5,8 @@
   "description": "Current beta version of room-assistant",
   "url": "https://www.room-assistant.io",
   "startup": "application",
+  "stage": "experimental",
+  "advanced": true,
   "arch": [
     "aarch64",
     "amd64",
@@ -20,9 +22,6 @@
   "host_network": true,
   "host_dbus": true,
   "gpio": true,
-  "devices": [
-    "/dev/i2c-1:/dev/i2c-1:rwm"
-  ],
   "ports": {
     "6415/tcp": null,
     "6425/udp": 6425
