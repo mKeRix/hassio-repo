@@ -1,9 +1,11 @@
 {
   "name": "room-assistant",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "slug": "room_assistant",
   "description": "Presence tracking and more for automation on the room-level",
   "url": "https://www.room-assistant.io",
+  "stage": "stable",
+  "advanced": false,
   "startup": "application",
   "arch": [
     "aarch64",
