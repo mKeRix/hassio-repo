@@ -3,7 +3,7 @@ ARG BUILD_FROM
 FROM $BUILD_FROM as build
 ARG BUILD_VERSION=latest
 
-RUN apk add --no-cache nodejs npm python make g++ linux-headers libusb-dev eudev-dev avahi-dev
+RUN apk add --no-cache nodejs npm python make g++ linux-headers libusb-dev eudev-dev avahi-dev cairo-dev jpeg-dev pango-dev giflib-dev
 RUN npm install -g --unsafe-perm room-assistant@$BUILD_VERSION
 
 FROM $BUILD_FROM

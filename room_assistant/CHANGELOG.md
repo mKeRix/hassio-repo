@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.8.0
+
+- Upgrades room-assistant to [2.8.0](https://github.com/mKeRix/room-assistant/releases/tag/v2.8.0)
+- Moves documentation to new tab in supervisor UI
+
 ## 2.7.1
 
 - Upgrades room-assistant to [2.7.1](https://github.com/mKeRix/room-assistant/releases/tag/v2.7.1)
