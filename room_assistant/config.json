@@ -1,6 +1,6 @@
 {
   "name": "room-assistant",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "slug": "room_assistant",
   "description": "Presence tracking and more for automation on the room-level",
   "url": "https://www.room-assistant.io",
