@@ -1,6 +1,6 @@
 {
   "name": "room-assistant",
-  "version": "2.9.1",
+  "version": "2.10.0",
   "slug": "room_assistant",
   "description": "Presence tracking and more for automation on the room-level",
   "url": "https://www.room-assistant.io",
@@ -25,6 +25,7 @@
   "privileged": [
     "NET_ADMIN"
   ],
+  "watchdog": "http://[HOST]:[PORT:6415]/status",
   "ports": {
     "6415/tcp": null,
     "6425/udp": 6425
