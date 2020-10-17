@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.11.0-beta.1
+
+- Upgrades room-assistant to [2.11.0-beta.1](https://github.com/mKeRix/room-assistant/releases/tag/v2.11.0-beta.1)
+- Adds healthcheck for watchdog
+
 ## 2.9.0-beta.2
 
 - Upgrades room-assistant to [2.9.0-beta.2](https://github.com/mKeRix/room-assistant/releases/tag/v2.9.0-beta.2)
