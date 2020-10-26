@@ -14,7 +14,14 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - name: Login to DockerHub Registry
-        run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
-      - name: Build Hass.io images
-        run: docker run --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock -v ~/.docker:/root/.docker -v "$GITHUB_WORKSPACE/room_assistant_beta":/data homeassistant/amd64-builder --all -t /data
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      - name: Publish Home Assistant images
+        uses: home-assistant/builder@2020.10.0
+        with:
+          args: |
+            --all \
+            --target /data/room_assistant_beta
