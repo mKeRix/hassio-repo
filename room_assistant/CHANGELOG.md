@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.11.3
+
+- Upgrades room-assistant to [2.11.3](https://github.com/mKeRix/room-assistant/releases/tag/v2.11.3)
+- Disable part of watchdog feature that was causing random restarts
+
 ## 2.11.2
 
 - Upgrades room-assistant to [2.11.2](https://github.com/mKeRix/room-assistant/releases/tag/v2.11.2)
