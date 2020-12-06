@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.13.0-beta.3
+
+- Upgrades room-assistant to [2.13.0-beta.3](https://github.com/mKeRix/room-assistant/releases/tag/v2.13.0-beta.3)
+
+### Important Notes
+
+- This release will cause all entities of the Xiaomi Mi integration to be recreated in Home Assistant due to a changed ID.
+
 ## 2.13.0-beta.2
 
 - Upgrades room-assistant to [2.13.0-beta.2](https://github.com/mKeRix/room-assistant/releases/tag/v2.13.0-beta.2)
