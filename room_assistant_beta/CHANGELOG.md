@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.13.0-beta.5
+
+- Upgrades room-assistant to [2.13.0-beta.5](https://github.com/mKeRix/room-assistant/releases/tag/v2.13.0-beta.5)
+
 ## 2.13.0-beta.4
 
 - Upgrades room-assistant to [2.13.0-beta.4](https://github.com/mKeRix/room-assistant/releases/tag/v2.13.0-beta.4)
