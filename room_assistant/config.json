@@ -40,7 +40,72 @@
       "integrations": [
         "homeAssistant"
       ]
-    }
+    },
+    "cluster": {
+      "peerAddresses": []
+    },
+    "bluetoothLowEnergy": {
+      "allowlist": [],
+      "denylist": []
+    },
+    "bluetoothClassic": {
+      "addresses": []
+    },
+    "omronD6t": {},
+    "gridEye": {},
+    "homeAssistant": {}
   },
-  "schema": false
+  "schema": {
+    "global": {
+      "instanceName": "str",
+      "integrations": ["str"]
+    },
+    "cluster": {
+      "networkInterface": "str?",
+      "port": "port?",
+      "timeout": "int(1,)?",
+      "weight": "int?",
+      "quorum": "int(1,)?",
+      "autoDiscovery": "bool?",
+      "peerAddresses": ["str?"]
+    },
+    "bluetoothLowEnergy": {
+      "hciDeviceId": "int(0,)?",
+      "allowlist": ["str?"],
+      "allowlistRegex": "bool?",
+      "denylist": ["str?"],
+      "denylistRegex": "bool?",
+      "processIBeacon": "bool?",
+      "onlyIBeacon": "bool?",
+      "majorMask": "int?",
+      "minorMask": "int?",
+      "batteryMask": "int?",
+      "timeout": "int(1,)?",
+      "updateFrequency": "int(0,)?",
+      "maxDistance": "int?"
+    },
+    "bluetoothClassic": {
+      "addresses": ["str?"],
+      "hciDeviceId": "int(0,)?",
+      "interval": "int(1,)?",
+      "scanTimeLimit": "int(1,)?",
+      "timeoutCycles": "int(1,)?",
+      "preserveState": "bool?",
+      "inquireFromStart": "bool?"
+    },
+    "omronD6t": {
+      "busNumber": "int(0,)?",
+      "address": "int?",
+      "deltaThreshold": "float?"
+    },
+    "gridEye": {
+      "busNumber": "int(0,)?",
+      "address": "int?",
+      "deltaThreshold": "float?"
+    },
+    "homeAssistant": {
+      "mqttUrl": "str?",
+      "sendAttributes": "bool?"
+    }
+  }
 }
