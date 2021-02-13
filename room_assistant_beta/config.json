@@ -34,13 +34,8 @@
     "6415/tcp": "HTTP API",
     "6425/udp": "Internal communication between instances"
   },
-  "options": {
-    "global": {
-      "instanceName": "changeme",
-      "integrations": [
-        "homeAssistant"
-      ]
-    }
-  },
+  "map": [
+    "config:rw"
+  ],
   "schema": false
 }
