@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.13.1
+
+- Upgrades room-assistant to [2.13.1](https://github.com/mKeRix/room-assistant/releases/tag/v2.13.1)
+- Fixes configuration issues for the add-on
+
+### Important Notes
+
+Due to a breaking change in the supervisor the configuration was migrated to a file-based setup. 
+You will need to create your configuration as files under `/config/room_assistant/` now - the web based editor will not work anymore.
+If this folder does not exist it will be created along with a sample configuration on the first add-on start.
+You can copy your old configuration exactly as it was into e.g. `/config/room_assistant/local.yml`.
+
 ## 2.13.0
 
 - Upgrades room-assistant to [2.13.0](https://github.com/mKeRix/room-assistant/releases/tag/v2.13.0)
