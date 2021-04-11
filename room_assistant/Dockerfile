@@ -4,7 +4,7 @@ FROM $BUILD_FROM as build
 ARG BUILD_VERSION=latest
 
 RUN apk add --no-cache nodejs npm python3 make g++ linux-headers libusb-dev eudev-dev avahi-dev
-RUN npm install -g --unsafe-perm room-assistant@$BUILD_VERSION
+RUN npm install -g --unsafe-perm room-assistant@$BUILD_VERSION winston-loki winston-elasticsearch
 
 FROM $BUILD_FROM
 
@@ -19,6 +19,6 @@ RUN apk add --no-cache nodejs npm bluez bluez-deprecated libusb avahi-dev bind-t
     && ln -s /usr/lib/node_modules/room-assistant/bin/room-assistant.js /usr/bin/room-assistant
 
 COPY rootfs /
-COPY --from=build /usr/lib/node_modules/room-assistant /usr/lib/node_modules/room-assistant
+COPY --from=build /usr/lib/node_modules /usr/lib/node_modules
 
 CMD ["/room-assistant/entrypoint.sh"]
