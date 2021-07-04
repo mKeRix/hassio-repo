@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.0-beta.2
+
+- Upgrades room-assistant to [3.0.0-beta.2](https://github.com/mKeRix/room-assistant/releases/tag/v3.0.0-beta.2)
+- Enable detailed status checks for watchdog
+- Map HTTP API port to host by default
+
 ## 2.13.0-beta.6
 
 - Upgrades room-assistant to [2.13.0-beta.6](https://github.com/mKeRix/room-assistant/releases/tag/v2.13.0-beta.6)
