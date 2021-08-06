@@ -19,6 +19,6 @@ RUN apk add --no-cache nodejs npm bluez bluez-deprecated libusb avahi-dev bind-t
     && ln -s /usr/lib/node_modules/room-assistant/bin/room-assistant.js /usr/bin/room-assistant
 
 COPY rootfs /
-COPY --from=build /usr/lib/node_modules /usr/lib/node_modules
+COPY --from=build /usr/local/lib/node_modules /usr/lib/node_modules
 
 CMD ["/room-assistant/entrypoint.sh"]
