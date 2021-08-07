@@ -1,6 +1,6 @@
 {
   "name": "room-assistant",
-  "version": "2.18.4",
+  "version": "latest",
   "slug": "room_assistant",
   "description": "Presence tracking and more for automation on the room-level",
   "url": "https://www.room-assistant.io",
@@ -15,7 +15,7 @@
     "armv7",
     "i386"
   ],
-  "image": "mkerix/room-assistant-{arch}",
+  "image": "wallacemreis/room-assistant-{arch}",
   "boot": "auto",
   "services": [
     "mqtt:want"
