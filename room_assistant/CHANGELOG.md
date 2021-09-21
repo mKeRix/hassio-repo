@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.19.0
+
+- Upgrades room-assistant to [2.19.0](https://github.com/mKeRix/room-assistant/releases/tag/v2.19.0)
+
 ## 2.18.4
 
 - Upgrades room-assistant to [2.18.4](https://github.com/mKeRix/room-assistant/releases/tag/v2.18.4)
