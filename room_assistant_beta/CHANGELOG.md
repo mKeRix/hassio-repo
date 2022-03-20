@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0-beta.5
+
+- Upgrades room-assistant to [3.0.0-beta.5](https://github.com/mKeRix/room-assistant/releases/tag/v3.0.0-beta.5)
+
 ## 3.0.0-beta.3
 
 - Upgrades room-assistant to [3.0.0-beta.3](https://github.com/mKeRix/room-assistant/releases/tag/v3.0.0-beta.3)
