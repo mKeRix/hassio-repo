@@ -11,7 +11,7 @@ FROM $BUILD_FROM
 WORKDIR /room-assistant
 ENV LANG C.UTF-8
 
-RUN apk add --no-cache nodejs npm bluez bluez-deprecated libusb avahi-dev bind-tools dmidecode \
+RUN apk add --no-cache nodejs npm bluez bluez-deprecated libusb avahi-dev bind-tools dmidecode cairo-dev jpeg-dev pango-dev giflib-dev \
     && setcap cap_net_raw+eip $(eval readlink -f `which node`) \
     && setcap cap_net_raw+eip $(eval readlink -f `which hcitool`) \
     && setcap cap_net_admin+eip $(eval readlink -f `which hciconfig`) \
