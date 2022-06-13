@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Publish Home Assistant images
-        uses: home-assistant/builder@2022.03.1
+        uses: home-assistant/builder@2022.06.0
         with:
           args: |
             --all \
